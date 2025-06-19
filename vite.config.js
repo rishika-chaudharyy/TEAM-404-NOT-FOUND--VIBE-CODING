@@ -6,13 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: [
-        '@react-three/fiber',
-        '@react-three/drei',
-        'three',
-        'react-router-dom',
-        '@use-gesture/react' // 👈 Add this line
-      ],
-    },
-  },
+      // ✅ No need to mark any packages as external
+    }
+  }
 });
