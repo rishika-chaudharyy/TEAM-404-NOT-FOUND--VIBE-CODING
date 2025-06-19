@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom"; // ✅ Make sure this is imported
-import "../styles/home.css";
+import "../styles/Home.css";
 import bg1 from "../assets/bg1.jpg";
 import bg2 from "../assets/bg2.png";
 import bg3 from "../assets/bg3.png";
