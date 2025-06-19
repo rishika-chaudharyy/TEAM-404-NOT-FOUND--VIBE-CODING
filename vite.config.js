@@ -10,7 +10,8 @@ export default defineConfig({
         '@react-three/fiber',
         '@react-three/drei',
         'three',
-        'react-router-dom'
+        'react-router-dom',
+        '@use-gesture/react' // 👈 Add this line
       ],
     },
   },
