@@ -1,94 +1,86 @@
+📁 Project Structure
 
+/src
+├── components # Reusable React components
+├── pages # Testimonial, Striking, Customer pages
+├── styles # CSS files
+├── assets # Images, icons, videos
+├── App.jsx # Main router with all routes
+└── main.jsx # React app entry
 
----
+🚀 Features
+✅ Testimonial Page
 
-## 🌟 Customer Page Animation
+Full-screen animated "Happy Sellers" title
 
-This React-based project presents an interactive **Customer Showcase Page** featuring:
+Auto-scrolling testimonial carousel with ripple effects
 
-- ✨ **Animated company name transitions**
-- 🖱️ **Hover-triggered buttons** that prompt deeper engagement
-- 💬 **Dynamic customer review cards** with images and testimonials
-- 📱 **Fully responsive design** and clean UI
-- 🎨 Styled with custom CSS animations
+Scroll-triggered feature cards with animations
 
-## 🚀 Features
+✅ Striking Page
 
-- **Rotating Company Names:** New company names fade in every few seconds.
-- **Hover Action:** Hover over a company name to reveal a "Meet the Customer" button.
-- **Customer Card View:** Clicking the button transitions into testimonial cards.
-- **Smooth UI Transitions:** CSS animations for fade, slide, and hover.
-- **Responsive Navbar:** Consistent navigation across all project pages.
+Interactive 3D objects (pipes or shapes) you can drag and animate using hand gestures
 
----
+Realistic lighting with @react-three/fiber & @react-three/drei
 
-## 🛠️ Tech Stack
+✅ Customer Page
 
-- **React** (`react-router-dom`)
-- **CSS** with custom keyframe animations
-- **Responsive Layout** using Flexbox
+Auto-changing company names with animated transitions
 
----
+Hover reveals "Meet the Customer" button
 
-## 📁 Project Structure
+On click, reveals cards with customer reviews and images
 
-```
-src/
-│
-├── components/
-│   └── CustomerPage.jsx         # Main customer showcase logic
-│
-├── styles/
-│   └── customer.css             # All animations and page styling
-│
-├── assets/                      # (Optional) Add real customer/company logos here
-│
-└── App.jsx / index.js           # Route integration for CustomerPage
-```
+✅ Reusable Animated Navbar
 
----
+Consistent across pages
 
-## 🧩 How to Use
+Responsive for mobile and tablet devices
 
-1. **Clone the repository:**
+🛠️ Tech Stack
+Frontend: React + Vite + CSS
 
-   ```bash
-   git clone https://github.com/rishika-chaudharyy/TEAM-404-NOT-FOUND--VIBE-CODING.git
-   cd customer-page-animation
-   ```
+3D: @react-three/fiber, @react-three/drei, use-gesture
 
-2. **Install dependencies:**
+Routing: React Router DOM
 
-   ```bash
-   npm install
-   ```
+Animations: CSS3, JavaScript, Scroll Reveal, Canvas Ripple
 
-3. **Run the development server:**
+📦 Installation & Setup
+Clone the repository
 
-   ```bash
-   npm run dev
-   ```
+git clone https://github.com/yourusername/agri-connect.git
+cd Team 404 Not Found
+Install dependencies
 
-4. **Open your browser:**
+npm install
+Run the development server
 
-   Visit `http://localhost:5173/customer` to view the page.
+npm run dev
+Open in Browser
 
----
+a
+http://localhost:5173/
 
-## ✨ Customization
+🌐 Pages and Routes
+Page Name Route Description
+Dashboard / Home page with navigation
+Testimonial /testimonial Animated testimonial carousel and features
+Striking /striking Interactive 3D object animation
+Customer /customer Animated company names and user reviews
 
-- To change the companies, modify the `companies` array in `CustomerPage.jsx`.
-- Add more reviews in the `customerReviews` array.
-- Update `customer.css` to tweak animations and layout.
+✨ Future Improvements
+💬 Integrate real-time chatbot for farmer queries
 
----
+🔍 Add filter/search to testimonial & customer reviews
 
-## 📬 Feedback & Contributions
+📱 Progressive Web App (PWA) support
 
-Got an idea to improve this? PRs and suggestions are welcome!
+🧠 Backend integration for real user data
 
----
+🙌 Team
+Team 404 Not Found
+Crafted with love during our hackathon journey ❤️
 
-## 📜 License
-
-MIT License © 2025 Rishika
+📄 License
+This project is licensed under the MIT License.
