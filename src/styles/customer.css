@@ -1,0 +1,138 @@
+.customer-page {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #1e1e2f, #2e2e3f);
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated Company Name */
+.company-name {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ffd166;
+  margin-bottom: 20px;
+  animation: fadeSlide 1s ease;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.company-name:hover {
+  transform: scale(1.05);
+}
+
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover Button */
+.meet-button {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  background-color: #ffd166;
+  color: #111;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.company-name:hover+.meet-button,
+.company-wrapper:hover .meet-button {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(-20%);
+}
+
+/* Customer Card Section */
+.customer-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 40px;
+  animation: fadeInCards 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeInCards {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.customer-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 25px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.customer-card:hover {
+  transform: scale(1.05);
+}
+
+.customer-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 2px solid #ffd166;
+}
+
+.customer-card h3 {
+  font-size: 1.2rem;
+  color: #ffd166;
+  margin-bottom: 10px;
+}
+
+.customer-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .customer-page {
+    padding: 40px 15px;
+  }
+
+  .company-name {
+    font-size: 2.2rem;
+  }
+
+  .customer-card {
+    width: 90%;
+  }
+}
