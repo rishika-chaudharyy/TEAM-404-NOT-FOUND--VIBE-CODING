@@ -1,4 +1,4 @@
-Here’s your `README.md` for the **Customer Page Animation** project:
+
 
 ---
 
